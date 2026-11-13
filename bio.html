@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Link Bio ✨</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Quicksand', sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);
+      padding: 20px;
+      color: #2d3436;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 420px;
+      background: rgba(255, 255, 255, 0.78);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1.5px solid rgba(255, 255, 255, 0.9);
+      border-radius: 28px;
+      padding: 36px 26px;
+      text-align: center;
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+      animation: fadeUp 0.6s ease-out;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .avatar {
+      width: 96px;
+      height: 96px;
+      margin: 0 auto 14px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 46px;
+      border: 4px solid #ffffff;
+      box-shadow: 0 8px 20px rgba(255, 154, 158, 0.35);
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: #1e272e;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #ffeaa7;
+      color: #6c5ce7;
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 12px;
+    }
+
+    .bio {
+      font-size: 0.95rem;
+      line-height: 1.5;
+      color: #4b5563;
+      margin-bottom: 20px;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+
+    .tag {
+      background: rgba(255, 255, 255, 0.85);
+      border: 1px solid #e5e7eb;
+      padding: 5px 12px;
+      border-radius: 14px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: #57606f;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .link-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      text-decoration: none;
+      background: #ffffff;
+      color: #2d3436;
+      font-weight: 700;
+      font-size: 0.98rem;
+      padding: 14px 18px;
+      border-radius: 16px;
+      border: 1.5px solid transparent;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+      transition: all 0.25s ease;
+    }
+
+    .link-btn:hover {
+      transform: translateY(-3px) scale(1.01);
+      border-color: #a6c1ee;
+      box-shadow: 0 8px 20px rgba(166, 193, 238, 0.45);
+      color: #6c5ce7;
+    }
+
+    .footer {
+      margin-top: 24px;
+      font-size: 0.8rem;
+      color: #636e72;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <!-- Đổi icon hoặc thay bằng thẻ <img src="link-anh" ...> nếu muốn dùng ảnh thật -->
+    <div class="avatar">🧋</div>
+
+    <!-- Sửa tên hoặc biệt danh của bà ở đây -->
+    <h1>Burrito ✨</h1>
+    <div class="badge">2k9 • Grade 12 • A01</div>
+
+    <!-- Sửa dòng giới thiệu ngắn ở đây -->
+    <p class="bio">
+      Chào mừng tới góc nhỏ của tui! Đang cày cuốc năm cuối cấp và tập tành làm web đầu tay 🌱
+    </p>
+
+    <!-- Các thẻ sở thích -->
+    <div class="tags">
+      <span class="tag">🧶 Móc len</span>
+      <span class="tag">📚 Đọc truyện</span>
+      <span class="tag">🎮 Chơi game</span>
+      <span class="tag">💻 HTML / SQL</span>
+    </div>
+
+    <!-- Danh sách các nút liên kết (nhớ thay dấu # bằng link thật của bà) -->
+    <div class="links">
+      <a href="https://www.tiktok.com" target="_blank" class="link-btn">
+        🎵 TikTok của tui
+      </a>
+      <a href="https://www.instagram.com" target="_blank" class="link-btn">
+        📸 Instagram
+      </a>
+      <a href="https://www.youtube.com" target="_blank" class="link-btn">
+        🎬 Playlist nhạc & phim hay
+      </a>
+      <a href="https://github.com" target="_blank" class="link-btn">
+        🐙 Dự án GitHub nhỏ
+      </a>
+    </div>
+
+    <div class="footer">
+      Made with 💖 on GitHub Pages • 2026
+    </div>
+  </div>
+
+</body>
+</html>
